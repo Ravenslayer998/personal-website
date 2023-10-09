@@ -1,7 +1,9 @@
 # Introduction
 
+This is a personal project for me to enhance my skillsets using the Reactjs framework. Building on the accomplishment I build from the calculator project. This project introduce a more in depth challenge for me to use Reactjs hooks functionality. 
+Will be improve the website from time to time. Adding more interactive elements for user to explore my bio.
 
-### Libraries
+### Libraries Used
 
 #### Chakra UI
 Chakra UI comes pre-configured with this lab, so you don't have to worry about installing it or setting it up.
@@ -20,5 +22,3 @@ Before you begin, if you run `npm start` and view the app in the browser, you'll
 
 The app outputs a page with an empty header, 3 different full-height sections and a footer.
 Every section has a different background color. The first 2 sections will be empty and the third section will contain all the UI elements for the Contact Me form.
-
-<img src="screenshots/initial_app.png" alt="drawing" width="1024"/>
