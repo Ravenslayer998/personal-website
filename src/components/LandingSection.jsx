@@ -22,9 +22,9 @@ const LandingSection = () => (
         <Avatar src={img} size='2xl' name="Jack Ooi" alt="Profile Picture of Creator"/>
         <Heading size="md" >{greeting}</Heading>
       </VStack>
-      <VStack spacing={6}>
-        <Heading>{bio1}</Heading>
-        <Heading>{bio2}</Heading>
+      <VStack spacing={4}>
+        <Heading size="2xl">{bio1}</Heading>
+        <Heading size="xl">{bio2}</Heading>
         <Heading size="sm">{bio3}</Heading>
       </VStack>  
     </VStack>
