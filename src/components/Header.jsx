@@ -26,7 +26,7 @@ const socials = [
 
   {
     icon: faStackOverflow,
-    url: "https://stackoverflow.com",
+    url: "https://stackoverflow.com/users/15035136/ooi-teng-hao",
   },
 ];
 
@@ -52,7 +52,7 @@ const Header = () => {
       transitionProperty="transform"
       transitionDuration=".3s"
       transitionTimingFunction="ease-in-out"
-      backgroundColor="#18181b"
+      backgroundColor="tranparent"
     >
       <Box color="white" maxWidth="1280px" margin="0 auto">
         <HStack
