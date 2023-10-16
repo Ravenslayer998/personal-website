@@ -16,6 +16,8 @@ code {
     monospace;
 }
 
-.chakra-stack css-o51fhk{
-  padding-bottom: 2rem;
+.BackGroundImg{
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; 
 }
