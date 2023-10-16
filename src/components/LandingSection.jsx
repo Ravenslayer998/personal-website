@@ -22,7 +22,7 @@ const LandingSection = () => (
     isDarkBackground
     backgroundColor="rgba(0,0,0,0.4)"
   >    
-    <VStack spacing={8} paddingLeft={5} paddingRight={5}>
+    <VStack spacing={8} paddingLeft={10} paddingRight={10}>
         <VStack spacing={4}>
           <Avatar src={profilePic} size='2xl' name="Jack Ooi" alt="Profile Picture of Creator"/>
           <Heading size="md">{greeting}</Heading>
