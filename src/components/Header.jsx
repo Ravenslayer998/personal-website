@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -7,7 +7,7 @@ import {
   faMedium,
   faStackOverflow,
 } from "@fortawesome/free-brands-svg-icons";
-import { Box, HStack } from "@chakra-ui/react";
+import { Box, HStack, useStatStyles } from "@chakra-ui/react";
 
 const socials = [
   {
@@ -30,7 +30,10 @@ const socials = [
   },
 ];
 
-const Header = () => {
+//Function Header Element for scrolling
+function Header () {
+  
+  // Function for handling clicks
   const handleClick = (anchor) => () => {
     const id = `${anchor}-section`;
     const element = document.getElementById(id);
@@ -40,9 +43,27 @@ const Header = () => {
         block: "start",
       });
     }
+
+  };
+  
+  // Initialise the useState Function for dynamic scrolling
+  const[navbar, setNavbar] = useState(false);
+
+  //Function Navbar for creating dynamic opaque properties.
+  const changeBackground = () =>{
+    if (window.scrollY >= 80){
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+    
+    console.log(window.scrollY)
   };
 
-  return (
+  //debugging use for scrollY
+  // window.addEventListener('scroll', changeBackground);
+
+return (    
     <Box
       position="fixed"
       top={0}
@@ -52,9 +73,9 @@ const Header = () => {
       transitionProperty="transform"
       transitionDuration=".3s"
       transitionTimingFunction="ease-in-out"
-      backgroundColor="tranparent"
+      className= {navbar?'navbar active':'navbar'}
     >
-      <Box color="white" maxWidth="auto" margin="0 auto">
+      <Box color="white" maxWidth="auto" margin="auto" >
         <HStack
           px={16}
           py={4}
@@ -76,6 +97,7 @@ const Header = () => {
               ))}
             </HStack>
           </nav>
+
           <nav>
             <HStack spacing={8}>
               {/* Add links to Projects and Contact me section */}

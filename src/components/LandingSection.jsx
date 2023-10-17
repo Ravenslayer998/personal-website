@@ -1,5 +1,5 @@
 import React from "react";
-import { Avatar, Heading, VStack, Image, HStack } from "@chakra-ui/react";
+import { Avatar, Heading, VStack, HStack } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 import profilePic from '../images/IMG_2796.png';
 
