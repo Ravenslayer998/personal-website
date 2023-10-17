@@ -4,7 +4,6 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faLinkedin,
-  faMedium,
   faStackOverflow,
 } from "@fortawesome/free-brands-svg-icons";
 import { Box, HStack, useStatStyles } from "@chakra-ui/react";
@@ -50,7 +49,7 @@ function Header () {
 
   //Function Navbar for creating dynamic opaque properties.
   const changeBackground = () =>{
-    if (window.scrollY >= 80){
+    if (window.scrollY >= 300){
       setNavbar(true);
     } else {
       setNavbar(false);
@@ -60,7 +59,7 @@ function Header () {
   };
 
   //debugging use for scrollY
-  // window.addEventListener('scroll', changeBackground);
+  window.addEventListener('scroll', changeBackground);
 
   return (    
     <Box
