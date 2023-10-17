@@ -37,11 +37,11 @@ const LandingSection = () => {
   return (
     <FullScreenSection
       isDarkBackground
-      backgroundColor="#512DA8"
+      backgroundColor="rgba(0,0,0,0.4)"
       py={16}
       spacing={8}
     >
-      <VStack w="1024px" p={32} alignItems="flex-start">
+      <VStack w="100vh" p={32} alignItems="flex-start">
         <Heading as="h1" id="contactme-section">
           Contact me
         </Heading>
