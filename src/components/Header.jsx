@@ -43,7 +43,6 @@ function Header () {
         block: "start",
       });
     }
-
   };
   
   // Initialise the useState Function for dynamic scrolling
@@ -63,7 +62,7 @@ function Header () {
   //debugging use for scrollY
   // window.addEventListener('scroll', changeBackground);
 
-return (    
+  return (    
     <Box
       position="fixed"
       top={0}
@@ -112,6 +111,6 @@ return (
         </HStack>
       </Box>
     </Box>
-  );
+    );
 };
 export default Header;
