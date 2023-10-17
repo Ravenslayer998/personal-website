@@ -21,7 +21,7 @@ const LandingSection = () => (
     alignItems="center"
     isDarkBackground
     backgroundColor="rgba(0,0,0,0.4)"
-    
+    backgroundImage
   >    
     <VStack spacing={8} paddingLeft="2em" paddingRight="2em">
         <VStack spacing={4} padding={10}>

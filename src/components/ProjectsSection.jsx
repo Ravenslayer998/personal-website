@@ -1,14 +1,15 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import FullScreenSection from "./FullScreenSection";
 import { Box, Heading } from "@chakra-ui/react";
 import Card from "./Card";
 
 const projects = [
   {
-    title: "React Space",
+    title: "Simple Calculator",
     description:
-      "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️",
+      "This was first ever Front-End Development project",
     getImageSrc: () => require("../images/photo1.jpg"),
+    url:"https://master--stellular-arithmetic-f61386.netlify.app/"
   },
   {
     title: "React Infinite Scroll",
@@ -33,7 +34,7 @@ const projects = [
 const ProjectsSection = () => {
   return (
     <FullScreenSection
-      backgroundColor="rgba(0,0,0,0.4)"
+      backgroundColor="rgba(0,0,0,0.7)"
       isDarkBackground
       p={8}
       alignItems="flex-start"
@@ -42,6 +43,7 @@ const ProjectsSection = () => {
       <Heading as="h1" id="projects-section">
         Featured Projects
       </Heading>
+      
       <Box
         display="grid"
         gridTemplateColumns="repeat(2,minmax(0,1fr))"
@@ -53,6 +55,7 @@ const ProjectsSection = () => {
             title={project.title}
             description={project.description}
             imageSrc={project.getImageSrc()}
+            // href={url}
           />
         ))}
       </Box>
