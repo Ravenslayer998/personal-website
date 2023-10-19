@@ -54,12 +54,11 @@ function Header () {
     } else {
       setNavbar(false);
     }
-    
     // console.log(window.scrollY)
   };
 
   //debugging use for scrollY
-  // window.addEventListener('scroll', changeBackground);
+  window.addEventListener('scroll', changeBackground);
 
   return (    
     <Box
