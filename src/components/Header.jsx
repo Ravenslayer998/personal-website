@@ -89,7 +89,7 @@ function Header () {
                 target="_blank"
                 rel="noopener noreferrer"
                 >
-                  <FontAwesomeIcon icon={icon} size="2x" key={url} />
+                  <FontAwesomeIcon icon={icon} size="2xl" key={url} />
                 </a>
               ))}
             </HStack>

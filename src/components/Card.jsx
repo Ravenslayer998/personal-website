@@ -14,7 +14,6 @@ return(
     <a href= {url}><Image src={imageSrc} /></a>
     <Heading>{title}</Heading>
     <Text>{description}</Text>
-    <Divider className="divider"/>
   </div>
   );
 };
