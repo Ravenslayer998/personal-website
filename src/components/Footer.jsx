@@ -1,6 +1,8 @@
 import React from "react";
 import {Box, Flex} from "@chakra-ui/react";
 
+
+// Function to get current year for Copyright section
 function getCurrentYear(){
   const currentDate = new Date();
   return currentDate.getFullYear();

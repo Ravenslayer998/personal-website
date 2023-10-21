@@ -1,6 +1,6 @@
 {
-  "homepage": "https://monicatvera.github.io/advance-react-porfolio",
-  "name": "graded-assessment",
+  "homepage": "https://localhost:3000/Homepage",
+  "name": "Jack Personal Website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

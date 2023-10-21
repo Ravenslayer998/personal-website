@@ -25,7 +25,7 @@ const LandingSection = () => (
   >    
     <VStack spacing={8} paddingLeft="2em" paddingRight="2em">
         <VStack spacing={4} padding={10}>
-          <Avatar src={profilePic} size='xl' name="Jack Ooi" alt="Profile Picture of Creator"/>
+          <img src={profilePic} name="Jack Ooi" alt="Profile Picture of Jack" className="avatar"/>
           <Heading size="md">{greeting}</Heading>
         </VStack>
 

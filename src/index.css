@@ -19,7 +19,7 @@ code {
 .BackGroundImg{
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: cover; 
+  background-size: auto auto; 
 }
 
 .navbar{
@@ -30,3 +30,8 @@ code {
   background-color: rgba(0,0,0);
 }
 
+.avatar{
+  border-radius:800px;
+  width:50vh;
+  height: 48vh;
+}
