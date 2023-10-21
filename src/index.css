@@ -32,6 +32,10 @@ code {
 
 .avatar{
   border-radius:800px;
-  width: 45rem;
-  height: 50rem;
+  width:50vh;
+  height: 50vh;
+}
+
+.contact .me{
+background-color: black;
 }

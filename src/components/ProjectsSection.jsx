@@ -7,7 +7,7 @@ const projects = [
   {
     title: "Simple Calculator",
     description:
-      "This was first ever Front-End Development project",
+      "This was first ever React.js Front-End Development project",
     getImageSrc: () => require("../images/photo1.jpg"),
     url:"https://master--stellular-arithmetic-f61386.netlify.app/",
   },
