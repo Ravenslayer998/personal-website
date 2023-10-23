@@ -1,5 +1,5 @@
 {
-  "homepage": "./",
+  "homepage": "https://localhost:3000/Homepage",
   "name": "Jack Personal Website",
   "version": "0.1.0",
   "private": true,
