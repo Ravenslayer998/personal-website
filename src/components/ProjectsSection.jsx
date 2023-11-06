@@ -31,7 +31,7 @@ const projects = [
   },
 ];
 
-export default Card;
+// export default Card;
 
 
 const ProjectsSection = () => {
