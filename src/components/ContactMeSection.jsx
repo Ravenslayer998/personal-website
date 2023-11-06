@@ -41,7 +41,7 @@ const LandingSection = () => {
       py={16}
       spacing={8}
     >
-      <VStack w="100vh" p={32} alignItems="flex-start">
+      <VStack w="100vh" p={10} alignItems="flex-start">
         <Heading as="h1" id="contactme-section">
           Contact me
         </Heading>
@@ -67,7 +67,7 @@ const LandingSection = () => {
               </FormControl>
               <FormControl>
                 <FormLabel htmlFor="type">Type of enquiry</FormLabel>
-                <Select id="type" name="type">
+                <Select id="type" name="type" >
                   <option value="hireMe">Freelance project proposal</option>
                   <option value="openSource">
                     Open source consultancy session

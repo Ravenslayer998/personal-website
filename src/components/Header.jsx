@@ -15,12 +15,12 @@ const socials = [
   },
   {
     icon: faGithub,
-    url: "https://github.com/Ravenslayer998"
+    url: "https://github.com/Ravenslayer998",
   },
-    
+
   {
     icon: faLinkedin,
-    url: "https://www.linkedin.com/thooi998",
+    url: "https://www.linkedin.com/in/thooi998",
   },
 
   {
@@ -30,8 +30,7 @@ const socials = [
 ];
 
 //Function Header Element for scrolling
-function Header () {
-  
+function Header() {
   // Function for handling clicks
   const handleClick = (anchor) => () => {
     const id = `${anchor}-section`;
@@ -43,24 +42,23 @@ function Header () {
       });
     }
   };
-  
+
   // Initialise the useState Function for dynamic scrolling
-  const[navbar, setNavbar] = useState(false);
+  const [navbar, setNavbar] = useState(false);
 
   //Function Navbar for creating dynamic opaque properties.
-  const changeBackground = () =>{
-    if (window.scrollY >= 150){
+  const changeBackground = () => {
+    if (window.scrollY >= 150) {
       setNavbar(true);
     } else {
       setNavbar(false);
     }
+    //debugging use for scrollY
     // console.log(window.scrollY)
   };
+  -window.addEventListener("scroll", changeBackground);
 
-  //debugging use for scrollY
-  window.addEventListener('scroll', changeBackground);
-
-  return (    
+  return (
     <Box
       position="fixed"
       top={0}
@@ -70,9 +68,9 @@ function Header () {
       transitionProperty="transform"
       transitionDuration=".3s"
       transitionTimingFunction="ease-in-out"
-      className= {navbar?'navbar active':'navbar'}
+      className={navbar ? "navbar active" : "navbar"}
     >
-      <Box color="white" maxWidth="auto" margin="auto" >
+      <Box color="white" maxWidth="auto" margin="auto">
         <HStack
           px={16}
           py={4}
@@ -81,15 +79,15 @@ function Header () {
         >
           <nav>
             <HStack spacing={8}>
-            {/* Add social media links based on the `socials` data */}
-              {socials.map(({icon, url})=>(
+              {/* Add social media links based on the `socials` data */}
+              {socials.map(({ icon, url }) => (
                 <a
-                key={url}
-                href={url}
-                target="_blank"
-                rel="noopener noreferrer"
+                  key={url}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <FontAwesomeIcon icon={icon} size="2x" key={url} />
+                  <FontAwesomeIcon icon={icon} size="2xl" key={url} />
                 </a>
               ))}
             </HStack>
@@ -109,6 +107,6 @@ function Header () {
         </HStack>
       </Box>
     </Box>
-    );
-};
+  );
+}
 export default Header;
