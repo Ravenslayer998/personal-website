@@ -1,6 +1,8 @@
 import { Heading, HStack, Image, Text, VStack, Button, Divider} from "@chakra-ui/react";
 import React from "react";
 
+
+// OnClick function for Car
 const Card = ({ title, description, imageSrc, url}) => {
   // Implement the UI for the Card component according to the instructions.
   // You should be able to implement the component with the elements imported above.
