@@ -1,4 +1,3 @@
-import React, {useEffect, useState} from "react";
 import FullScreenSection from "./FullScreenSection";
 import { Box, Heading } from "@chakra-ui/react";
 import Card from "./Card";
@@ -58,7 +57,7 @@ const ProjectsSection = () => {
             title={project.title}
             description={project.description}
             imageSrc={project.getImageSrc()}
-            // href={url}
+            link={project.url}
           />
         ))}
       </Box>
